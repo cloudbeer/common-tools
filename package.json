@@ -1,0 +1,30 @@
+{
+  "name": "common-tools",
+  "version": "0.0.1",
+  "description": "nodejs common tools collection",
+  "main": "index.js",
+  "scripts": {
+    "test": "./test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cloudbeer/common-tools.git"
+  },
+  "keywords": [
+    "tools",
+    "helper"
+  ],
+  "author": "Xie Zhengwei <iam@xiezhengwei.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cloudbeer/common-tools/issues"
+  },
+  "homepage": "https://github.com/cloudbeer/common-tools#readme",
+  "dependencies": {
+    "sha256": "^0.2.0",
+    "uuid": "^2.0.1"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.5"
+  }
+}
