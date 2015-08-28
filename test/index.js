@@ -1,5 +1,6 @@
 var stringTools = require("../lib/string-tools");
 var validateTools = require("../lib/validate-tools");
+var should = require('should');
 
 
 var assert = require("assert");
@@ -24,6 +25,17 @@ describe('String Tools', function () {
 
             assert.equal("string", typeof enText);
             assert.equal(true, oText.b == deText.b);
+
+        });
+    });
+    describe('#uuidNoSlash()', function () {
+        it('不带横杠的uuid', function () {
+            var uuidSlash = stringTools.uuid();
+            var uuidNoSlash = stringTools.uuid(true);
+            uuidSlash.indexOf("-").should.above(1);
+            uuidNoSlash.indexOf("-").should.eql(-1);
+            //[ 1, 2, 3].should.containDeep([2, 1]);
+            //uuidNoSlash.should.containDeep("-");
 
         });
     });

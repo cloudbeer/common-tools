@@ -3,23 +3,23 @@ nodejs common tools collection
 
 ## string tools
 
-### randomString: function (howMany, chars)
+randomString: function (howMany, chars)
 
-### captach: function ()
+captach: function ()
 
-### uuidNoSlash: function (noSlash)
+uuidNoSlash: function (noSlash)
 
-### genPassword: function (password)
+genPassword: function (password)
 
-### jsonEncodeBase64: function (data)
+jsonEncodeBase64: function (data)
 
-### jsonDecodeBase64: function (data)
+jsonDecodeBase64: function (data)
 
-### sha256: function (data, salt)
+sha256: function (data, salt)
 
 
 ## validate tools
 
-### isEmail: function (email)
+isEmail: function (email)
 
-### isChinaMobile: function (mobile)
+isChinaMobile: function (mobile)
