@@ -1,6 +1,23 @@
 # common-tools
 nodejs common tools collection
 
+## Install
+
+npm i common-tools --save
+
+## Example
+
+    var stringTools = require("common-tools").stringTools;
+    var validateTools = require("common-tools").validateTools;
+
+    console.log(stringTools.randomString(10));
+    console.log(stringTools.genPassword("mypassword"));
+
+    console.log(validateTools.isEmail("abc"));
+
+
+
+
 ## string tools
 
 randomString: function (howMany, chars)
