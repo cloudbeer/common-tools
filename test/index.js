@@ -1,5 +1,5 @@
 var stringTools = require("../lib/string-tools");
-var regexTools = require("../lib/validate-tools");
+var validateTools = require("../lib/validate-tools");
 
 
 var assert = require("assert");
@@ -33,18 +33,18 @@ describe('String Tools', function () {
 describe('Regex Tools', function () {
     describe('#isEmail()', function () {
         it('should be right email', function () {
-            assert.equal(true, regexTools.isEmail("a@b.cm"));
-            assert.equal(false, regexTools.isEmail("ab.c"));
-            assert.equal(false, regexTools.isEmail("a@b.c"));
-            assert.equal(false, regexTools.isEmail("ab@c"));
+            assert.equal(true, validateTools.isEmail("a@b.cm"));
+            assert.equal(false, validateTools.isEmail("ab.c"));
+            assert.equal(false, validateTools.isEmail("a@b.c"));
+            assert.equal(false, validateTools.isEmail("ab@c"));
         });
     });
     describe('#isChinaMobile()', function () {
         it('中国的手机号码', function () {
-            assert.equal(true, regexTools.isChinaMobile("10000000000"));
-            assert.equal(false, regexTools.isChinaMobile("20000000000"));
-            assert.equal(false, regexTools.isChinaMobile("abc"));
-            assert.equal(false, regexTools.isChinaMobile("11111111"));
+            assert.equal(true, validateTools.isChinaMobile("10000000000"));
+            assert.equal(false, validateTools.isChinaMobile("20000000000"));
+            assert.equal(false, validateTools.isChinaMobile("abc"));
+            assert.equal(false, validateTools.isChinaMobile("11111111"));
         });
     });
     describe('#jsonEncodeBase64() and decode', function () {
