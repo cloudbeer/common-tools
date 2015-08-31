@@ -40,3 +40,12 @@ sha256: function (data, salt)
 isEmail: function (email)
 
 isChinaMobile: function (mobile)
+
+
+## http client
+
+http client for yield invoke
+
+get: function (url, data)
+
+post: function (url, data)
