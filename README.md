@@ -34,12 +34,15 @@ jsonDecodeBase64: function (data)
 
 sha256: function (data, salt)
 
+htmlEncode: function(myString)
 
 ## validate tools
 
 isEmail: function (email)
 
 isChinaMobile: function (mobile)
+
+isIpV4: function(ip)
 
 
 ## http client
