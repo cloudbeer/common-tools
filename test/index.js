@@ -1,5 +1,6 @@
 var stringTools = require("../lib/string-tools");
 var validateTools = require("../lib/validate-tools");
+var netTools = require("../lib/net-tools");
 var should = require('should');
 
 
@@ -71,3 +72,13 @@ describe('Regex Tools', function () {
         });
     });
 });
+
+
+//describe('Net Tools', function () {
+//    describe('#ipv4s()', function () {
+//        it('should be an array', function(){
+//
+//        });
+//        console.log(netTools.ipv4s());
+//    });
+//});
