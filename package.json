@@ -1,6 +1,6 @@
 {
   "name": "common-tools",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "nodejs common tools collection",
   "main": "index.js",
   "scripts": {
